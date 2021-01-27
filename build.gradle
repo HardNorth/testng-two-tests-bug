@@ -1,0 +1,21 @@
+apply plugin: 'java'
+
+sourceCompatibility = JavaVersion.VERSION_1_8
+targetCompatibility = JavaVersion.VERSION_1_8
+
+repositories {
+    mavenLocal()
+    maven { url "https://dl.bintray.com/epam/reportportal" }
+}
+
+dependencies {
+    compile 'com.epam.reportportal:agent-java-testng:5.0.8'
+    compile 'org.testng:testng:7.1.0'
+}
+
+test {
+    outputs.upToDateWhen { return false }
+    useTestNG() {
+        suites 'src/test/resources/testng.xml'
+    }
+}
