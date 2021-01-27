@@ -10,8 +10,8 @@ repositories {
 }
 
 dependencies {
-    compile 'com.epam.reportportal:agent-java-testng:5.0.8'
-    compile 'org.testng:testng:7.3.0'
+    testCompile 'org.testng:testng:7.3.0'
+    testCompile 'com.epam.reportportal:agent-java-testng:5.0.8'
 }
 
 test {
