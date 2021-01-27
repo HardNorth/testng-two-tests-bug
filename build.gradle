@@ -11,6 +11,7 @@ repositories {
 
 dependencies {
     testCompile 'org.testng:testng:7.3.0'
+//    testCompile 'org.testng:testng:7.1.0'
     testCompile 'com.epam.reportportal:agent-java-testng:5.0.8'
 }
 
