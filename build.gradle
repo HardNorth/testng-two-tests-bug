@@ -4,13 +4,13 @@ sourceCompatibility = JavaVersion.VERSION_1_8
 targetCompatibility = JavaVersion.VERSION_1_8
 
 repositories {
-    mavenLocal()
+    mavenCentral()
     maven { url "https://dl.bintray.com/epam/reportportal" }
 }
 
 dependencies {
     compile 'com.epam.reportportal:agent-java-testng:5.0.8'
-    compile 'org.testng:testng:7.1.0'
+    compile 'org.testng:testng:7.3.0'
 }
 
 test {
